@@ -14,6 +14,9 @@
     "Blender"
   ],
   "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
   "author": "Paul Schneider",
   "repository": {
     "type": "git",
