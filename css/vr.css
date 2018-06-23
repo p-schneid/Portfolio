@@ -1,0 +1,196 @@
+
+
+section {
+    padding: 30px 0;
+}
+
+p {
+    margin: 20px 0 0 0;
+}
+
+ol, ul {
+    margin: 20px 0 0 0;
+}
+
+p, li{
+    color: #16082d;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 30px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Bungee', cursive;
+    margin: 10px 0 0 0;
+}
+
+h1 {
+    color: #fe2422;
+    font-size: 34px;
+}
+
+h2 {
+    color: #b43dd5;
+    font-size: 28px;
+}
+
+h3 {
+    color: #f61f7f;
+    font-size: 18px;
+}
+
+h4 {
+    color: #f634b9;
+    font-size: 18px;
+}
+
+label {
+    color: white;
+    font-family: 'Bungee', cursive;
+    margin: 12px;
+    font-weight: 100;
+}
+
+header {
+    background-color: white;
+    padding: 20px 0 20px 0;
+    margin: 0 0 50% 0;
+}
+
+main {
+    background-color: white;
+}
+
+@media (min-width: 768px) { 
+    .narrow {
+        padding: 0 15%;
+    }
+}
+
+.image, .image-gallery, .video{
+    margin: 30px 0 10px 0;
+}
+
+.image-gallery img {
+    padding: 0 0 10px 0;
+}
+
+.image-gallery p {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    text-align: center;    
+}
+
+.blue-border {
+    border: #16082d solid;
+    border-width: 10px 25px 20px 7px;
+}
+
+.blue-bg {
+    background: #16082d;
+    padding: 10px 25px 20px 7px;
+}
+
+.vr-pyramids {
+    margin: 0 0 15% 0;
+}
+
+.vr-foreground {
+    position: fixed;
+    z-index: -2;
+}
+
+.description {
+    margin: 45px 0;
+}
+
+.detail h2, .detail h3, .detail h4 {
+    margin: 30px 0 0 0;
+}
+
+.detail-border {
+    text-align: right;
+    cursor: pointer;
+}
+
+.detail-border label {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+.detail-top-border {
+    background-color: #fe2422;
+    width: 50%;
+}
+
+.detail-bottom-border {
+    background-color: #b43dd5;
+    width: 40%;
+
+}
+
+.details {
+    padding: 45px 0;
+}
+
+@media (min-width: 768px) { 
+    .details {
+        background-image: url("../img/detail-pink-bg.jpg");
+        background-repeat: repeat-y;
+    }
+}
+
+.legend {
+    margin: 0 0 15px 0;
+}
+
+.legend-entry {
+    display: inline-block;
+    padding: 0 5%; 
+}
+
+.legend-entry strong {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.legend-entry span {
+    width: 100%;
+    display: block;
+}
+
+.selected strong {
+    color: #f6ff00;
+}
+
+.selected span {
+    height: 8px;
+    background-color: #f6ff00;
+}
+
+.hover strong {
+    color: #f6ff00;
+}
+
+.hover span {
+    height: 4px;
+    background-color: #f6ff00;
+}
+
+.fov strong {
+    color: #fe256f;
+}
+
+.fov span {
+    height: 4px;
+    background-color: #fe256f;
+}
+
+.tilt-control-gif {
+    cursor: pointer;
+}
+

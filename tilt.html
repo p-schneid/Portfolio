@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>Paul Schnieder</title>
+    <meta name="author" content="Paul Schneider">
+    <meta name="description" content="My virtual reality portpholio. Enjoy! - Paul Schneider">
+
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <script src="components/RotateByHeadTilt.js"></script>
+    
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="heart-obj" src="models/heart.obj"></a-asset-item>
+        <a-asset-item id="heart-mtl" src="models/heart.mtl"></a-asset-item>
+      </a-assets>
+      
+      <a-entity rotate-by-head-tilt obj-model="obj: #heart-obj; mtl: #heart-mtl" position="0 1.6 -3" scale="2 2 2" ></a-entity>
+      <a-sky color="#010111"></a-sky>
+      <a-light type="point" intensity="0.5" position="0.097, 0.448, 3.553"></a-light>
+      <a-light type="point" intensity="0.5" position="-2.246 -2.246, -0.961"></a-light>
+      <!-- <a-light type="point" intensity="0.4" position="0 0, 1"></a-light> -->
+      <!-- <a-light type="ambient" intensity="0.4" ></a-light> -->
+    </a-scene>
+  </body>
+</html>
+
+
