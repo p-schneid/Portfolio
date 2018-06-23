@@ -1,30 +1,29 @@
 {
-  "title": "Stylish Portfolio",
-  "name": "startbootstrap-stylish-portfolio",
-  "version": "4.0.0-beta",
-  "description": "A stylish portfolio HTML template built with Bootstrap",
+  "title": "Paul Portfolio",
+  "name": "paul-portfolio",
+  "version": "1.0.0",
+  "description": "My virtual reality portfolio. Enjoy! - Paul Schneider",
   "keywords": [
-    "css",
-    "sass",
-    "html",
-    "responsive",
-    "theme",
-    "template"
+    "Portfolio",
+    "VR",
+    "AR",
+    "HoloLens",
+    "Vive",
+    "A-Frame",
+    "Unity",
+    "Blender"
   ],
-  "homepage": "https://startbootstrap.com/template-overviews/stylish-portfolio",
-  "bugs": {
-    "url": "https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/issues",
-    "email": "feedback@startbootstrap.com"
-  },
-  "license": "MIT",
-  "author": "Start Bootstrap",
-  "contributors": [
-    "David Miller (http://davidmiller.io/)"
-  ],
+  "main": "index.js",
+  "author": "Paul Schneider",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio.git"
+    "url": "https://github.com/p-schneid/Portfolio.git"
   },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/p-schneid/Portfolio/issues"
+  },
+  "homepage": "https://github.com/p-schneid/Portfolio/",
   "dependencies": {
     "bootstrap": "^4.0.0-beta",
     "font-awesome": "4.7.0",
