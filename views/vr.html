@@ -2,7 +2,6 @@
 <html lang="en">
 
     <head>
-
         <title>Paul Schnieder</title>
         <meta name="author" content="Paul Schneider">
         <meta name="description" content="My virtual reality portfolio. Enjoy! - Paul Schneider">
@@ -10,14 +9,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="icon" type="image/png" href="img/favicon.png">
+        <link rel="icon" type="image/png" href="../public/img/favicon.png">
 
         <link href="https://fonts.googleapis.com/css?family=Bungee|Quicksand" rel="stylesheet">
 
         <!-- Bootstrap -->
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-        <link href="css/vr.css" rel="stylesheet" >
+        <link href="../public/css/vr.css" rel="stylesheet" >
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,7 +27,7 @@
 
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout.js"></script> -->
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-        <script src="js/vr.js" type="text/javascript"></script>
+        <script src="../public/js/vr.js" type="text/javascript"></script>
 
     </head>
 
@@ -37,11 +36,11 @@
         <!-- pyramids -->
 
         <div class="vr-foreground">
-            <img class="img-responsive" src="./img/vr-foreground.jpg">
+            <img class="img-responsive" src="../public/img/vr-foreground.jpg">
         </div>
 
         <div class="vr-pyramids">
-            <img class="img-responsive" src="./img/vr-pyramids.png">
+            <img class="img-responsive" src="../public/img/vr-pyramids.png">
         </div>
 
         <header>
@@ -77,7 +76,7 @@
                                 <p>Electrophysiologists are inundated with information in the operating room. They must interpret EKGs, ultrasounds, X-Rays - thousands of data points from half a dozen video feeds. And they have to rely on several assistants to manage and manipulate this constant stream of information. We built SoloEP to return control to the physician. Using a HMD, the EP can directly manage these visual displays by gazing, gesturing, and speaking. I lead the UI and UX design on this project.</p>
                                
                                 <div class="image">
-                                    <img class="img-responsive blue-border" src="./img/solo-ep.jpg">
+                                    <img class="img-responsive blue-border" src="../public/img/solo-ep.jpg">
                                 </div>
 
                             </div>
@@ -107,7 +106,7 @@
                             <p><b>A simple interaction model</b><br>As the physician must maintain absolute focus on the operation, we have to limit the interface to a few, simple interactions. They can't waste time fumbling through long menu systems or busy toolbars. All video feeds must be easily and quickly accessible. </p>
 
                             <div class="image narrow">
-                                <img class="img-responsive blue-border" src="./img/solo-ep-static-layout.jpg">
+                                <img class="img-responsive blue-border" src="../public/img/solo-ep-static-layout.jpg">
                             </div>
 
                             <p>I first came up with this Full Screen layout. All the displays are visible. They all have the proper dimensions. The physician must simply look around to navigate between the displays. Very quick and intuitive. After closer inspection though, I realized I was overlooking two other important requirements. </p>
@@ -117,7 +116,7 @@
                             <p><b>The UI must be compact</b><br>As you add more video displays, the content area becomes taller and wider, and the distance between displays becomes greater. Because the Electrophysiologist is immobilized at the patient's bed side, a large UI is impractical. The EP can't shuffle their feet and turn to another display every few seconds. Its possible they could strain their back and neck to glance between videos, but this would be very uncomfortable during a four hour procedure. The UI should be as compact as possible.</p>
 
                             <div class="image narrow">
-                                <img class="img-responsive blue-border" src="./img/solo-ep-fluid-layout.jpg">
+                                <img class="img-responsive blue-border" src="../public/img/solo-ep-fluid-layout.jpg">
                             </div>
 
                             <p>I finally settled on this Fluid layout. A single display occupies the center of the physician's FOV, at optimal size and distance. Smaller displays are arrayed along the perimeter, just outside the viewing frustums. These are not for viewing and interacting; rather, they serve as preview icons to help the physician navigate between displays. To view a new video, the EP need only select it's preview icon on the periphery. The new video now streams in the central display. All the displays are still visible and readily accessible. Nothing is hidden behind menus or buttons or even text. It scales. And it's organized - all displays are anchored to a specific point in space allowing the physician to quickly recall their location. The following storyboard illustrates the user's experience. </p>
@@ -133,13 +132,13 @@
                                     <div class="legend-entry fov col-xs-4" >
                                         <strong>FOV</strong> <span>&nbsp;</span></div> 
                                 </div>
-                                <img class="img-responsive" src="./img/gaze-at-fluro.jpg">
+                                <img class="img-responsive" src="../public/img/gaze-at-fluro.jpg">
                                 <p>[GAZE] at CARTO preview</p>
-                                <img class="img-responsive" src="./img/gaze-at-carto-preset.jpg">
+                                <img class="img-responsive" src="../public/img/gaze-at-carto-preset.jpg">
                                 <p>[SELECT] CARTO preview</p>
-                                <img class="img-responsive" src="./img/select-carto-preset.jpg">
+                                <img class="img-responsive" src="../public/img/select-carto-preset.jpg">
                                 <p>[GAZE] at CARTO</p>
-                                <img class="img-responsive" src="./img/gaze-at-carto.jpg">
+                                <img class="img-responsive" src="../public/img/gaze-at-carto.jpg">
                             </div>
 
                             <p><b>Rotation</b></p>
@@ -151,7 +150,7 @@
                             <p>To meet these challenges, I developed a head tilt mechanism to rotate the heart. It’s pretty simple. The physician's head acts as a joystick. Our hardware can detect very fine head movements, similar to what you might find on a console joystick. This control mechanism is quite intuitive. Because the head can pitch and roll and turn, these rotations translate quite nicely when rotating a model heart. I developed the following prototype as a proof-of-concept. Originally developed for Unity + HoloLens, I recreated it in A-Frame to share here. Put on an HMD and check it out!</p>
 
                             <div class="image">
-                                <a href="./tilt.html"><img class="img-responsive blue-border tilt-control-gif" src="./img/tilt-control.gif"></a>
+                                <a href="./tilt.html"><img class="img-responsive blue-border tilt-control-gif" src="../public/img/tilt-control.gif"></a>
                             </div>
 
                             <p>Finally, here is a storyboard for the entire rotation sequence.</p>
@@ -167,13 +166,13 @@
                                     <div class="legend-entry fov col-xs-4" >
                                         <strong>FOV</strong> <span>&nbsp;</span></div> 
                                 </div>
-                                <img class="img-responsive" src="./img/gaze-at-carto.jpg">
+                                <img class="img-responsive" src="../public/img/gaze-at-carto.jpg">
                                 <p>[SELECT] CARTO</p>
-                                <img class="img-responsive" src="./img/select-carto.jpg">
+                                <img class="img-responsive" src="../public/img/select-carto.jpg">
                                 <p>[SELECT] 'Rotate Heart'</p>
-                                <img class="img-responsive" src="./img/start-rotate-carto.jpg">
+                                <img class="img-responsive" src="../public/img/start-rotate-carto.jpg">
                                 <p>[TILT] head</p>
-                                <img class="img-responsive" src="./img/rotate-carto.jpg">
+                                <img class="img-responsive" src="../public/img/rotate-carto.jpg">
                             </div>
 
                         </div>   
@@ -208,7 +207,7 @@
                                 <p>Traumatic burns are incredibly painful. Recovery from a severe burn is possibly worse. The healing process is long and demanding. Burn survivors must follow a specific regiment of physical and psychological therapy. They must manage their pain. Patient education is imperative. We built Pyrus Burns to explore how augmented reality can help educate burn patients. Using the Microsoft HoloLens, we project realistic burn holograms onto the patient's arm. These holograms are designed to help the patient understand their own burn, and how it's appearance and feel will progress over time. I managed the UI and UX development on this project.</p>
 
                                 <div class="image narrow">
-                                    <img class="img-responsive blue-border" src="./img/pyrus-burns-demo.jpg">
+                                    <img class="img-responsive blue-border" src="../public/img/pyrus-burns-demo.jpg">
                                 </div>
 
                             </div>
@@ -234,9 +233,9 @@
                             <p>As UI developer, it was my responsibility to build and maintain this layer. I coordinated communication between the user and the system. I constructed the interface elements in Unity. I designed the wireframe holograms in Blender. I programmed the behavior of all these objects. Along the way, I learned the best practices for UI in mixed reality.</p>
 
                             <div class="image-gallery blue-bg">
-                                <img class="img-responsive" src="./img/ui-start.jpg">
-                                <img class="img-responsive" src="./img/ui-calibrate-arm.jpg">
-                                <img class="img-responsive" src="./img/ui-calibrate-cube.jpg">
+                                <img class="img-responsive" src="../public/img/ui-start.jpg">
+                                <img class="img-responsive" src="../public/img/ui-calibrate-arm.jpg">
+                                <img class="img-responsive" src="../public/img/ui-calibrate-cube.jpg">
                             </div>
 
                             <h3>UX Development</h3>
@@ -248,7 +247,7 @@
                             <p>Our arm tracking prototype was very ambitious. We used <a href="https://github.com/qian256/HoloLensARToolKit">HoloLensARToolkit</a>, a library that leverages the HoloLens’ cameras to detect QR codes and calculate their position and orientation in space. We  attached these QR codes onto a wristband, and strapped it to the arm. </p>                           
 
                             <div class="image narrow">
-                                <img class="img-responsive blue-border" src="./img/qr-cube.jpg">
+                                <img class="img-responsive blue-border" src="../public/img/qr-cube.jpg">
                             </div>
 
                             <p>Finding the offset vector between the QR cube and arm was difficult. After a few failed attempts, we came up with this procedure: </p>
@@ -265,7 +264,7 @@
                             <div class="video blue-border">
                                 <div align="center" class="embed-responsive embed-responsive-16by9">
                                     <video controls class="embed-responsive-item">
-                                        <source src="./img/pyrus-burns-arm-tracking-prototype.mp4" type="video/mp4">
+                                        <source src="../public/img/pyrus-burns-arm-tracking-prototype.mp4" type="video/mp4">
                                     </video>
                                 </div>    
                             </div>     
@@ -279,7 +278,7 @@
                             <div class="video blue-border">
                                 <div align="center" class="embed-responsive embed-responsive-16by9">
                                     <video controls class="embed-responsive-item">
-                                        <source src="./img/pyrus-burns-static-prototype.mp4" type="video/mp4">
+                                        <source src="../public/img/pyrus-burns-static-prototype.mp4" type="video/mp4">
                                     </video>
                                 </div>     
                             </div>
@@ -318,7 +317,7 @@
                                 <div class="video blue-border">
                                     <div align="center" class="embed-responsive embed-responsive-16by9">
                                         <video controls class="embed-responsive-item">
-                                            <source src="./img/parachute-sim.mp4" type="video/mp4">
+                                            <source src="../public/img/parachute-sim.mp4" type="video/mp4">
                                         </video>
                                     </div>    
                                 </div>     

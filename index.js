@@ -1,25 +1,42 @@
-const http = require('http');
-var url = require('url');
-var fs = require('fs');
 
-const hostname = '10.0.0.220';
-const port = 8080;
+  
+var express = require("express");
 
-const server = http.createServer((req, res) => {
+var app = express();
+var router = express.Router();
+const path = require('path')
+var viewPath = __dirname + '/views/';
 
-  var q = url.parse(req.url, true);
-  var filename = "." + q.pathname;
-  fs.readFile(filename, function(err, data) {
-    if (err) {
-      res.writeHead(404, {'Content-Type': 'text/html'});
-      return res.end("404 Not Found");
-    }  
-    res.write(data);
-    return res.end();
-  });
-
+router.use(function (req,res,next) {
+  console.log("/" + req.method);
+  next();
 });
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+router.get("/",function(req,res){
+  res.sendFile(viewPath + "vr.html");
+});
+
+router.get("/vr",function(req,res){
+  res.sendFile(viewPath + "vr.html");
+});
+
+router.get("/design",function(req,res){
+  res.sendFile(viewPath + "design.html");
+});
+
+router.get("/tilt",function(req,res){
+  res.sendFile(viewPath + "tilt.html");
+});
+
+app.use("/public", express.static(path.join(__dirname, 'public')))
+app.use("/node_modules", express.static(path.join(__dirname, 'node_modules')))
+
+app.use("/",router);
+
+app.use("*",function(req,res){
+  res.sendFile(viewPath + "404.html");
+});
+
+app.listen(3000,function(){
+  console.log("Live at Port 3000");
 });
