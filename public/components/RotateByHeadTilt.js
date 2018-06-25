@@ -8,7 +8,7 @@ AFRAME.registerComponent('rotate-by-head-tilt', {
     inverseRotation: {default: true, type: 'boolean'},
     minHeadAngle: {default: 4, type: 'float'},
     maxHeadAngle: {default: 8, type: 'float'},
-    dampeningFactor: {default: 8, type: 'int'}
+    dampeningFactor: {default: 10, type: 'int'}
   },
 
   init: function () {
