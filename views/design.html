@@ -20,7 +20,8 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="../public/css/design.css" >
+    <link href="../public/css/design.css" rel="stylesheet">
+    <link href="../public/css/site.css" rel="stylesheet" >
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,16 +33,32 @@
   </head>
 
   <body>
-      
-    <!-- Header -->
-    <!-- <header class="header" id="top">
-      <div class="text-vertical-center">
-        <h1>Start Bootstrap</h1>
-        <h3>Free Bootstrap Themes &amp; Templates</h3>
-        <br>
-        <a href="#about" class="btn btn-dark btn-lg js-scroll-trigger">Find Out More</a>
-      </div>
-    </header> -->
+
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container-fluid">
+        
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="navbar-brand">
+            <img alt="Brand" src="../public/img/logo-nav.png">
+          </span>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../vr">VR & AR</a></li>
+            <li><a href="../design">Graphic Design</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
 
     <div class="portfolio">
 
@@ -58,7 +75,7 @@
           <div class="row">
             <div class="col-md-10 col-md-offset-1">
               <h1>My Portfolio</h1>
-              <p>Hello! I see you've stumbled across my design portfolio. I started this project in the winter of 2016. Im hoping to use this to jump start a career in graphic design, UI design, or web design. Ive been sketching illustrations since highschool. Back then, I was mostly re-imagining baseball logos (perhaps you see the see the influence in my portfolio logo?)  I periodically sketch to blowoff creative steam. After college, I began dreaming up business ideas. Get rich quick schemes seemed like such a romantic alternative to a life time of office work... This entreprenurial spirit culminated in myfoodstand.com, a site I designed from sktrach. This portfolio is a collection of all these businesses ideas, and the illustrations, webpages, and videos I created to bring them to life. Its been fun!</p>
+              <p>Hello! I see you've stumbled across my design portfolio. I started this project in the winter of 2016. Im hoping to use this to jump start a career in graphic design, branding, UI design, or web design. I've been sketching illustrations since highschool. Back then, I was mostly re-imagining baseball logos (perhaps you see the see the influence in my portfolio logo?)  I periodically sketch to blowoff creative steam. After college, I began dreaming up business ideas. Get rich quick schemes seemed like such a romantic alternative to a life time of office work... This entreprenurial spirit culminated in myfoodstand.com, a site I designed from sktrach. This portfolio is a collection of all these businesses ideas, and the illustrations, webpages, and videos I created to bring them to life. Its been fun!</p>
             </div>
           </div>
           <div class="row">
@@ -228,7 +245,6 @@
 
         </div>
       </div>
-
 
     <!-- Bootstrap core JavaScript -->
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>

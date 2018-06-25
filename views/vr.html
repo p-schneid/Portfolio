@@ -17,6 +17,7 @@
         <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
         <link href="../public/css/vr.css" rel="stylesheet" >
+        <link href="../public/css/site.css" rel="stylesheet" >
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,16 +26,36 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout.js"></script> -->
-        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-        <script src="../public/js/vr.js" type="text/javascript"></script>
-
     </head>
 
     <body>
+        <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container-fluid">
+                
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <span class="navbar-brand">
+                    <img alt="Brand" src="../public/img/logo-nav.png">
+                </span>
+                </div>
+            
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../vr">VR & AR</a></li>
+                    <li><a href="../design">Graphic Design</a></li>
+                </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
 
         <!-- pyramids -->
-
         <div class="vr-foreground">
             <img class="img-responsive" src="../public/img/vr-foreground.jpg">
         </div>
@@ -42,7 +63,7 @@
         <div class="vr-pyramids">
             <img class="img-responsive" src="../public/img/vr-pyramids.png">
         </div>
-
+        
         <header>
             <div class="container-fluid">
                 <div class="row">
@@ -332,6 +353,15 @@
             </section>
 
         </main>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="../public/js/vr.js"></script>
+        
 
     </body>
 
