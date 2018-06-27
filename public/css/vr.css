@@ -22,25 +22,22 @@ p, li{
 h1, h2, h3, h4 {
     font-family: 'Bungee', cursive;
     margin: 10px 0 0 0;
+    color: #fe2422;
 }
 
 h1 {
-    color: #fe2422;
     font-size: 34px;
 }
 
 h2 {
-    color: #b43dd5;
     font-size: 28px;
 }
 
 h3 {
-    color: #f61f7f;
     font-size: 18px;
 }
 
 h4 {
-    color: #f634b9;
     font-size: 18px;
 }
 
@@ -104,6 +101,22 @@ main {
 
 .description {
     margin: 45px 0;
+}
+
+.title h1 {
+    color: #fe2422;
+}
+
+.title h2 {
+    color: #b43dd5;
+}
+
+.title h3{
+    color: #f61f7f;
+}
+
+.title h4 {
+    color: #f634b9;
 }
 
 .detail h2, .detail h3, .detail h4 {
@@ -192,5 +205,9 @@ main {
 
 .tilt-control-gif {
     cursor: pointer;
+}
+
+.sandbox {
+    background-color: #fdffbe;
 }
 
