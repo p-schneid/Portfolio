@@ -1,0 +1,44 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: #120f0f;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.row {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.small-carat {
+    font-size: 18px;
+    color: #ffff09;
+}
+
+.large-carat {
+    font-size: 112px;
+    color: #ffff09;
+}
+
+.software {
+
+}
+
+.title {
+    margin-top: 80px;
+}
+
+.title .large-carat {
+    margin-top: 30px;
+}
+
+.summary {
+    
+}
+
+.project-gallery {
+    background-color: #120f0f;
+    height: 600px;
+}

@@ -1,6 +1,6 @@
 
 body { 
-  background: url(../img/navy-cloth.jpg);
+  background: url(/public/img/navy-cloth.jpg);
 }
 
 .logo {
@@ -26,7 +26,7 @@ body {
 
 .matte {
 
-    background-image: url(../img/beige-cardstock.jpg); 
+    background-image: url(/public/img/beige-cardstock.jpg); 
     padding: 5px;
     border-radius: 2px;  
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.85);*/
@@ -101,7 +101,7 @@ body {
     width: 100%;
     height: 800px;
     max-height: 800px;
-    background-image: url('../img/desktop.png');
+    background-image: url('/public/img/desktop.png');
     background-repeat: no-repeat;
     background-size: contain;
 }

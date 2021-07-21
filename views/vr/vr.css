@@ -151,7 +151,7 @@ main {
 
 @media (min-width: 768px) { 
     .details {
-        background-image: url("../img/detail-pink-bg.jpg");
+        background-image: url("/public/img/detail-pink-bg.jpg");
         background-repeat: repeat-y;
     }
 }
