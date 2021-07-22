@@ -40,5 +40,14 @@ h1 {
 
 .project-gallery {
     background-color: #120f0f;
-    height: 600px;
+    height: 220px;
+    padding: 50px 0;
+}
+
+.project-gallery li {
+  
+}
+
+.project-gallery img {
+    height: 120px;
 }
