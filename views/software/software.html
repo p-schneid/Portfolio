@@ -5,7 +5,7 @@
 
     <title>Paul Schnieder</title>
     <meta name="author" content="Paul Schneider">
-    <meta name="description" content="My photography and graphic design portpholio. Enjoy! - Paul Schneider">
+    <meta name="description" content="My web development portfolio. Enjoy! - Paul Schneider">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -75,7 +75,7 @@
               <h1>Web Application</h1>
             </div>
             <div class="col-md-4">
-              <i class="fas fa-chevron-left large-carat"></i>
+              <i class="fas fa-chevron-left large-caret"></i>
             </div>
           </div>
           <div class="row summary">
@@ -88,7 +88,15 @@
 
       <div class="container-fluid project-gallery">
         <div class="container">
-            <div class="splide">
+            <div id='ProjectGallery' class="splide">
+              <div class="splide__arrows">
+                <div class="splide__arrow splide__arrow--prev">
+                  <i class="fas fa-caret-left medium-caret"></i>
+                </div>
+                <div class="splide__arrow splide__arrow--next">
+                  <i class="fas fa-caret-right medium-caret"></i>
+                </div>
+              </div>
               <div class="splide__track">
                 <ul class="splide__list">
                   <li class="splide__slide"><img src="/public/img/logo-resimp.png" class="img-responsive" /></li>
@@ -106,15 +114,60 @@
         <div class="container">
           <div class="row">
             <div class="col-md-3 col-lg-offset-2">
-              <i class="fas fa-chevron-right large-carat"></i>
-              <i class="fas fa-chevron-right large-carat"></i>
-              <i class="fas fa-chevron-right large-carat"></i>
+              <i class="fas fa-chevron-right large-caret"></i>
+              <i class="fas fa-chevron-right large-caret"></i>
+              <i class="fas fa-chevron-right large-caret"></i>
             </div>
           </div>
         </div>
       </div>
 
     </div>
+
+    <!-- The Modal -->
+    <div class="modal" id="ProjectModal" class='project-modal'>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+              <div class="asset-gallery">
+                <div id="AssetGallery" class="splide">
+                  <div class="splide__arrows">
+                    <div class="splide__arrow splide__arrow--prev">
+                      <i class="fas fa-caret-left medium-caret"></i>
+                    </div>
+                    <div class="splide__arrow splide__arrow--next">
+                      <i class="fas fa-caret-right medium-caret"></i>
+                    </div>
+                  </div>
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide"><img src="/public/img/resimp-search-1.png" class="img-responsive" /></li>
+                      <li class="splide__slide"><img src="/public/img/resimp-search-2.png" class="img-responsive"/></li>
+                      <li class="splide__slide"><img src="/public/img/resimp-search-3.png" class="img-responsive"/></li>
+                      <li class="splide__slide"><img src="/public/img/resimp-property-listing-1.png" class="img-responsive"/></li>
+                      <li class="splide__slide"><img src="/public/img/resimp-search-4.png" class="img-responsive"/></li>
+                      <li class="splide__slide"><img src="/public/img/resimp-brokers.png" class="img-responsive"/></li>
+                      <li class="splide__slide"><img src="/public/img/resimp-broker.png" class="img-responsive"/></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="project-details">
+                <div class="container-fluid">
+                  <div class="row">
+                      <h1>Resimplifi</h1>
+                  </div>
+                  <div class="row">
+                      <p>Aenean nec tincidunt lacus. Aenean facilisis condimentum tellus a maximus. Morbi leo eros, aliquam at tincidunt vitae, dictum quis lacus. Morbi cursus et metus eget gravida. Sed sit amet efficitur turpis. Phasellus suscipit elit sed orci tempus, a interdum sem blandit. Quisque porta quam vitae pulvinar hendrerit. Vivamus aliquet, diam in convallis iaculis, sem lectus fringilla lacus, molestie maximus dui libero ut mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 
     <!-- Bootstrap core JavaScript -->
@@ -123,14 +176,26 @@
     <script src="../node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
 
     <script>
-      new Splide('.splide', {
+
+      let sliderOptions = {
         type: 'loop',
         gap: '100px',
         autoWidth: true,
         focus: 'center',
         pagination: false,
-        autoplay: true
-      }).mount();
+        autoplay: false, 
+        interval: 4000, 
+        pauseOnFocus: false,
+        pauseOnHover: false,
+      }
+
+      new Splide('#ProjectGallery', sliderOptions).mount();
+      new Splide('#AssetGallery', sliderOptions).mount();
+
+      let modalElement = $('#ProjectModal');
+      modalElement.modal({show: false});
+      modalElement.modal('show');
+
     </script>
 
 

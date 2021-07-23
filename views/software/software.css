@@ -12,14 +12,37 @@ h1 {
     margin-bottom: 30px;
 }
 
-.small-carat {
-    font-size: 18px;
+.small-caret {
+    font-size: 12px;
     color: #ffff09;
 }
 
-.large-carat {
+.medium-caret {
+    font-size: 50px;
+    color: #ffff09;
+}
+
+.large-caret {
     font-size: 112px;
     color: #ffff09;
+}
+
+.splide__arrow {
+    background: none;
+}
+
+@media (min-width: 768px) {
+    .modal-dialog {
+        width: 85%;
+    }
+}
+
+.modal-body {
+    padding: 0;
+} 
+
+.modal-content {
+    border: 5px solid #ffff09;
 }
 
 .software {
@@ -30,7 +53,7 @@ h1 {
     margin-top: 80px;
 }
 
-.title .large-carat {
+.title .large-caret {
     margin-top: 30px;
 }
 
@@ -38,16 +61,36 @@ h1 {
     
 }
 
+
 .project-gallery {
     background-color: #120f0f;
-    height: 220px;
-    padding: 50px 0;
-}
-
-.project-gallery li {
-  
+    height: 320px;
+    padding: 100px 0;
 }
 
 .project-gallery img {
     height: 120px;
 }
+
+.asset-gallery {
+    background-color: #120f0f;
+}
+
+.asset-gallery li {
+    padding: 100px 50px;
+}
+
+.asset-gallery img {
+  max-width: 80vw;
+  width: 700px;
+}
+
+.project-details {
+    padding: 30px;
+}
+
+.project-details h1 {
+    text-align: center;
+}
+
+
