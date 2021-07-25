@@ -71,16 +71,15 @@
       <div class="container-fluid intro">
         <div class="container">
           <div class="row title">
-            <div class="col-md-5 col-md-offset-2">
-              <h1>Web Application</h1>
-            </div>
-            <div class="col-md-4">
+              <h1>Web Application Development</h1>
               <i class="fas fa-chevron-left large-caret"></i>
-            </div>
           </div>
           <div class="row summary">
             <div class="col-md-10 col-md-offset-1">
-              <p>Aenean nec tincidunt lacus. Aenean facilisis condimentum tellus a maximus. Morbi leo eros, aliquam at tincidunt vitae, dictum quis lacus. Morbi cursus et metus eget gravida. Sed sit amet efficitur turpis. Phasellus suscipit elit sed orci tempus, a interdum sem blandit. Quisque porta quam vitae pulvinar hendrerit. Vivamus aliquet, diam in convallis iaculis, sem lectus fringilla lacus, molestie maximus dui libero ut mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+              <div class="text">
+                <i class="fas fa-chevron-right small-caret"></i>
+                <p>Aenean nec tincidunt lacus. Aenean facilisis condimentum tellus a maximus. Morbi leo eros, aliquam at tincidunt vitae, dictum quis lacus. Morbi cursus et metus eget gravida. Sed sit amet efficitur turpis. Phasellus suscipit elit sed orci tempus, a interdum sem blandit. Quisque porta quam vitae pulvinar hendrerit. Vivamus aliquet, diam in convallis iaculis, sem lectus fringilla lacus, molestie maximus dui libero ut mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -125,10 +124,13 @@
     </div>
 
     <!-- The Modal -->
-    <div class="modal" id="ProjectModal" class='project-modal'>
+    <div class="modal" id="ProjectModal">
       <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-body">
+          <div class="modal-body project-modal">
+              <div class="close-btn">
+                <i class="fas fa-times" onclick="closeModal()"></i>
+              </div>
               <div class="asset-gallery">
                 <div id="AssetGallery" class="splide">
                   <div class="splide__arrows">
@@ -158,7 +160,10 @@
                       <h1>Resimplifi</h1>
                   </div>
                   <div class="row">
+                    <div class="text">
+                      <i class="fas fa-chevron-right small-caret"></i>
                       <p>Aenean nec tincidunt lacus. Aenean facilisis condimentum tellus a maximus. Morbi leo eros, aliquam at tincidunt vitae, dictum quis lacus. Morbi cursus et metus eget gravida. Sed sit amet efficitur turpis. Phasellus suscipit elit sed orci tempus, a interdum sem blandit. Quisque porta quam vitae pulvinar hendrerit. Vivamus aliquet, diam in convallis iaculis, sem lectus fringilla lacus, molestie maximus dui libero ut mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -183,7 +188,7 @@
         autoWidth: true,
         focus: 'center',
         pagination: false,
-        autoplay: false, 
+        autoplay: true, 
         interval: 4000, 
         pauseOnFocus: false,
         pauseOnHover: false,
@@ -194,7 +199,11 @@
 
       let modalElement = $('#ProjectModal');
       modalElement.modal({show: false});
-      modalElement.modal('show');
+      modalElement.modal("show");
+
+      let closeModal = function() {
+        modalElement.modal("hide");
+      }
 
     </script>
 

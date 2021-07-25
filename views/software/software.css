@@ -3,17 +3,14 @@ body {
     color: #120f0f;
 }
 
-h1 {
-    font-size: 60px;
-}
-
 .row {
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
 .small-caret {
-    font-size: 12px;
+    font-size: 28px;
+    height: 26px;
     color: #ffff09;
 }
 
@@ -50,17 +47,28 @@ h1 {
 }
 
 .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 80px;
 }
 
-.title .large-caret {
-    margin-top: 30px;
+.title h1 {
+    max-width: 300px;
 }
 
 .summary {
-    
+
 }
 
+.text {
+    display: flex;
+    align-items: center;
+}
+
+.text p {
+    margin: 0 0 0 15px;
+}
 
 .project-gallery {
     background-color: #120f0f;
@@ -72,17 +80,48 @@ h1 {
     height: 120px;
 }
 
+.project-modal {
+    position: relative;
+}
+
+.project-modal .close-btn {
+    position: absolute;
+    right: 8px;
+    top: 5px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+@media (min-width: 768px) {
+    .project-modal .close-btn {
+        display: none;
+    }
+}
+
+.project-modal .close-btn i {
+    color: #ffff09;
+    font-size: 24px;
+}
+
 .asset-gallery {
     background-color: #120f0f;
 }
 
-.asset-gallery li {
-    padding: 100px 50px;
+/* smartphones, touchscreens */
+@media (hover: none) and (pointer: coarse) {
+    .splide__arrow {
+        display: none;
+    }
 }
 
+.asset-gallery li {
+    padding: 50px 25px;
+}
+
+/* I'm going to have to target these to screen shot styles */
 .asset-gallery img {
-  max-width: 80vw;
-  width: 700px;
+    max-width: 80vw;
+    width: 700px;
 }
 
 .project-details {
